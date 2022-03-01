@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_save"
+        android:icon = "@drawable/ic_baseline_save_24"
+        app:showAsAction="always"
+        android:title="Save" />
+    <item
+        android:title="Background Change"
+        android:id="@+id/menu_bg_change"
+        android:icon="@drawable/ic_baseline_color_lens_24"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hanks.passcodeview.PasscodeView
+        android:id="@+id/pcv_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#91A8d0"
+        app:correctStateColor="#009B77"
+        app:firstInputTip="Vui lòng nhập mật khẩu có 6 số"
+        app:normalStateColor="@color/white"
+        app:numberTextColor="#000000"
+        app:passcodeLength="6"
+        app:wrongStateColor="#E2492F" />
+
+</RelativeLayout>

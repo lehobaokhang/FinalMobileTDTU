@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="15dp"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:id="@+id/card_background_element"
+            android:background="@color/card_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_weight="5"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/ivReaction"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:src="@drawable/veryhappy" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_weight="5"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/ivWeather"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_wb_sunny_24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvShortContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
